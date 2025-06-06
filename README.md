@@ -13,10 +13,17 @@ The core of this project is a keypoint detection model trained on annotated imag
 ## Repository Contents
 
 - **Keypoint Detection Model Training:**  
-  The pipeline includes data loading, preprocessing, and training a deep learning model to detect keypoints on images. The dataset consists of images paired with keypoint annotations stored in text (TXT) files.
+  Notebook for includes data loading, preprocessing, and training a deep learning model to detect keypoints on images. The dataset consists of images paired with keypoint annotations stored in text (TXT) files.
 
 - **Pitch Keypoint Detection and Homography Estimation:**  
-  Using the trained model, keypoints are detected on pitch images. These detected points are matched to reference points to compute the homography matrix. This transformation can be used for tasks such as image rectification and spatial analysis of pitch layouts.
+  Notebook to apply the trained model on pitch images to detect keypoints. These detected points are matched to reference points to compute the homography matrix. This transformation can be used for tasks such as image rectification and spatial analysis of pitch layouts.
+  
+- **dataset:**
+  Contains the training, testing and validation images and their corresponding annotations in `.txt` format.
+  
+ - **models:**
+   Directory containing trained model weights for inference or fine-tuning.  
+
 
 ---
 
